@@ -1,6 +1,7 @@
 import React,{ useState } from 'react'
-
+import ResourceList from './ResourceList'
 const App = () => {
+    
     const [resource, setResource] = useState('posts');
         return( 
         <div>
@@ -10,6 +11,7 @@ const App = () => {
                 <div>
                     {resource}
                 </div>
+                <ResourceList resource = {resource}/>
             </div>
         </div>
         )
